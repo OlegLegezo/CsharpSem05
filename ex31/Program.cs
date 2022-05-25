@@ -11,7 +11,7 @@ int[] nums = new int[12];
 var numRnd = new Random();//var - сам определяет тип
 for (int i = 0; i < nums.Length; i++)
 {
-    nums[i] = numRnd.Next(-9, 9);
+    nums[i] = numRnd.Next(-9, 10); // последнее число не используется в рандоме, а первое используется
     Console.Write(nums[i] + " ");
 }
 int sumPositive = 0;
@@ -25,8 +25,10 @@ Console.WriteLine();
 Console.WriteLine($"сумма положительных элементов = {sumPositive}");
 Console.WriteLine($"сумма отрицательных элементов = {sumNegative}");
 
-void Method(int[] nums);
-{
-    nums[0]=1;
-    nums[1]=2;
-}
+
+// какой-то пример, что массив можно править внутри, когда он задан снаружи... ничего не понятно ;В
+// void Method(int[] nums);
+// {
+//     nums[0]=1;
+//     nums[1]=2;
+// }
