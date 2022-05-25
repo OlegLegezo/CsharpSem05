@@ -8,12 +8,12 @@ int[] nums = new int[4];
 var numRnd = new Random();//var - сам определяет тип
 for (int i = 0; i < nums.Length; i++)
 {
-    nums[i] = numRnd.Next(-9, 9);
+    nums[i] = numRnd.Next(-9, 10);
     Console.Write(nums[i] + " ");
 }
 Console.WriteLine();
 for (int i = 0; i < nums.Length; i++)
 {
-    nums[i]=-nums[i];
+    nums[i]=-nums[i];//просто умножение на минус 1
     Console.Write(nums[i] + " ");
 }
